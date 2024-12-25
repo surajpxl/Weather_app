@@ -8,7 +8,6 @@ import snow_icon from "../assets/snow.png";
 import wind_icon from "../assets/wind.png";
 import search_icon from "../assets/search.png";
 
-
 const Weather = () => {
   const inputRef = useRef();
   const [weather, setWeather] = useState(null);
@@ -60,11 +59,12 @@ const Weather = () => {
   }, []);
 
   return (
-    <div className="min-h-screen grid place-items-center bg-[#88a7a2]"
-    style={{
+    <div
+      className="min-h-screen grid place-items-center bg-[#88a7a2]"
+      style={{
         fontFamily: "'Poppins', sans-serif",
       }}
-      >
+    >
       <div className="bg-white shadow-lg rounded-lg p-6 max-w-sm w-full transition hover:scale-105">
         <div className="flex items-center gap-4 mb-6">
           <input
